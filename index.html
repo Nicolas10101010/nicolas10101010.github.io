@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musictasting – Startseite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-btn">
+        <h1>Musictasting</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Startseite</a></li>
+          <li><a href="topics.html">Themen</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="bgToggle">Heller Hintergrund</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Entdecke die Welt der Musik</h2>
+        <p>
+          Entdecke viele Musikstile – von Rock bis R&amp;B – mit spannenden
+          Hintergrundinfos, Tipps & Empfehlungen.
+        </p>
+      </section>
+
+      <section class="articles-grid">
+        <a href="article.html?genre=Hip-Hop">
+          <article data-genre="Hip-Hop">
+            <h3>Hip-Hop</h3>
+            <p>Rhymes, Beats und Street Art.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Pop">
+          <article data-genre="Pop">
+            <h3>Pop</h3>
+            <p>Eingängig, melodisch und kommerziell.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Rock">
+          <article data-genre="Rock">
+            <h3>Rock</h3>
+            <p>Kraftvoll, verzerrt und rebellisch.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Country">
+          <article data-genre="Country">
+            <h3>Country</h3>
+            <p>Folkige Balladen aus den USA.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Electronic">
+          <article data-genre="Electronic">
+            <h3>Electronic</h3>
+            <p>Synths, Samples und Clubsound.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Latin">
+          <article data-genre="Latin">
+            <h3>Latin</h3>
+            <p>Rhythmus, Tanz und Sonne.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=RnB">
+          <article data-genre="RnB">
+            <h3>R&amp;B</h3>
+            <p>Soul, Funk und Groove.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Jazz">
+          <article data-genre="Jazz">
+            <h3>Jazz</h3>
+            <p>Improvisation, Swing und Harmonie.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Indie">
+          <article data-genre="Indie">
+            <h3>Indie</h3>
+            <p>Unabhängig und experimentell.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Metal">
+          <article data-genre="Metal">
+            <h3>Metal</h3>
+            <p>Heavy Riffs und extreme Kraft.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Lo-Fi">
+          <article data-genre="Lo-Fi">
+            <h3>Lo-Fi</h3>
+            <p>Chillige, verrauschte Beats.</p>
+          </article>
+        </a>
+        <a href="article.html?genre=Klassisch">
+          <article data-genre="Klassisch">
+            <h3>Klassisch</h3>
+            <p>Von Barock bis Romantik.</p>
+          </article>
+        </a>
+      </section>
+
+      <section class="newsletter">
+        <h2>Newsletter abonnieren</h2>
+        <form action="#">
+          <label for="email">E-Mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mail@beispiel.com"
+            required
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Bitte geben Sie eine gültige E-Mail-Adresse ein"
+          />
+          <button type="submit">Abonnieren</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Musictasting</p>
+    </footer>
+    <script src="background.js"></script>
+  </body>
+</html>

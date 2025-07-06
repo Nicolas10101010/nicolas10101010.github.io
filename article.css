@@ -1,0 +1,423 @@
+.article-detail {
+  background: rgba(30, 30, 46, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 5px solid;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body.light-mode .article-detail {
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+.article-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Border colors for genres */
+.article-detail[data-genre="Rock"] {
+  border-color: var(--rock-color);
+}
+.article-detail[data-genre="Pop"] {
+  border-color: var(--pop-color);
+}
+.article-detail[data-genre="Jazz"] {
+  border-color: var(--jazz-color);
+}
+.article-detail[data-genre="Hip-Hop"] {
+  border-color: var(--hiphop-color);
+}
+.article-detail[data-genre="Electronic"] {
+  border-color: var(--electronic-color);
+}
+.article-detail[data-genre="Klassisch"] {
+  border-color: var(--klassisch-color);
+}
+.article-detail[data-genre="Indie"] {
+  border-color: var(--indie-color);
+}
+.article-detail[data-genre="Metal"] {
+  border-color: var(--metal-color);
+}
+.article-detail[data-genre="Latin"] {
+  border-color: var(--latin-color);
+}
+.article-detail[data-genre="Lo-Fi"] {
+  border-color: var(--lofi-color);
+}
+.article-detail[data-genre="Country"] {
+  border-color: var(--country-color);
+}
+.article-detail[data-genre="RnB"] {
+  border-color: var(--rnb-color);
+}
+.article-detail[data-genre="Blues"] {
+  border-color: var(--blues-color);
+}
+.article-detail[data-genre="Reggae"] {
+  border-color: var(--reggae-color);
+}
+.article-detail[data-genre="Funk"] {
+  border-color: var(--funk-color);
+}
+.article-detail[data-genre="Gospel"] {
+  border-color: var(--gospel-color);
+}
+.article-detail[data-genre="Ska"] {
+  border-color: var(--ska-color);
+}
+.article-detail[data-genre="Disco"] {
+  border-color: var(--disco-color);
+}
+.article-detail[data-genre="Punk"] {
+  border-color: var(--punk-color);
+}
+.article-detail[data-genre="Ambient"] {
+  border-color: var(--ambient-color);
+}
+
+.article-detail h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, currentColor, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Genre title styles */
+.article-detail[data-genre="Rock"] .genre-title {
+  color: var(--rock-color);
+  font-family: "Rock Salt", cursive;
+}
+.article-detail[data-genre="Pop"] .genre-title {
+  color: var(--pop-color);
+  font-family: "Montserrat", sans-serif;
+}
+.article-detail[data-genre="Jazz"] .genre-title {
+  color: var(--jazz-color);
+  font-family: "Playfair Display", serif;
+}
+.article-detail[data-genre="Hip-Hop"] .genre-title {
+  color: var(--hiphop-color);
+  font-family: "Bebas Neue", cursive;
+}
+.article-detail[data-genre="Electronic"] .genre-title {
+  color: var(--electronic-color);
+  font-family: "Orbitron", sans-serif;
+}
+.article-detail[data-genre="Klassisch"] .genre-title {
+  color: var(--klassisch-color);
+  font-family: "Libre Baskerville", serif;
+}
+.article-detail[data-genre="Indie"] .genre-title {
+  color: var(--indie-color);
+  font-family: "Poppins", sans-serif;
+}
+.article-detail[data-genre="Metal"] .genre-title {
+  color: var(--metal-color);
+  font-family: "Metal Mania", cursive;
+}
+.article-detail[data-genre="Latin"] .genre-title {
+  color: var(--latin-color);
+  font-family: "Roboto Slab", serif;
+}
+.article-detail[data-genre="Lo-Fi"] .genre-title {
+  color: var(--lofi-color);
+  font-family: "Comfortaa", cursive;
+}
+.article-detail[data-genre="Country"] .genre-title {
+  color: var(--country-color);
+  font-family: "Amatic SC", cursive;
+}
+.article-detail[data-genre="RnB"] .genre-title {
+  color: var(--rnb-color);
+  font-family: "Raleway", sans-serif;
+}
+.article-detail[data-genre="Blues"] .genre-title {
+  color: var(--blues-color);
+  font-family: "Merriweather", serif;
+}
+.article-detail[data-genre="Reggae"] .genre-title {
+  color: var(--reggae-color);
+  font-family: "Fredericka the Great", cursive;
+}
+.article-detail[data-genre="Funk"] .genre-title {
+  color: var(--funk-color);
+  font-family: "Shrikhand", cursive;
+}
+.article-detail[data-genre="Gospel"] .genre-title {
+  color: var(--gospel-color);
+  font-family: "Great Vibes", cursive;
+}
+.article-detail[data-genre="Ska"] .genre-title {
+  color: var(--ska-color);
+  font-family: "Anton", sans-serif;
+}
+.article-detail[data-genre="Disco"] .genre-title {
+  color: var(--disco-color);
+  font-family: "Monoton", cursive;
+}
+.article-detail[data-genre="Punk"] .genre-title {
+  color: var(--punk-color);
+  font-family: "Bangers", cursive;
+}
+.article-detail[data-genre="Ambient"] .genre-title {
+  color: var(--ambient-color);
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Slide-Down Container */
+.slide-down {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Toggle Button */
+.slide-down-toggle {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  border: none;
+  color: #e6e6e6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+body.light-mode .slide-down-toggle {
+  color: #000;
+}
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+.slide-down.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Content Panel: nur height & opacity animieren */
+.slide-down-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+.slide-down.active .slide-down-content {
+  height: auto; /* nach Transition auf auto wechseln via JS */
+  opacity: 1;
+}
+body.light-mode .slide-down-content {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Genre-specific background for Toggle */
+[data-genre="Rock"] .slide-down-toggle {
+  background: rgba(231, 76, 60, 0.2);
+}
+[data-genre="Pop"] .slide-down-toggle {
+  background: rgba(243, 156, 18, 0.2);
+}
+[data-genre="Jazz"] .slide-down-toggle {
+  background: rgba(52, 152, 219, 0.2);
+}
+[data-genre="Hip-Hop"] .slide-down-toggle {
+  background: rgba(155, 89, 182, 0.2);
+}
+[data-genre="Electronic"] .slide-down-toggle {
+  background: rgba(26, 188, 156, 0.2);
+}
+[data-genre="Klassisch"] .slide-down-toggle {
+  background: rgba(230, 126, 34, 0.2);
+}
+[data-genre="Indie"] .slide-down-toggle {
+  background: rgba(46, 204, 113, 0.2);
+}
+[data-genre="Metal"] .slide-down-toggle {
+  background: rgba(127, 140, 141, 0.2);
+}
+[data-genre="Latin"] .slide-down-toggle {
+  background: rgba(232, 67, 147, 0.2);
+}
+[data-genre="Lo-Fi"] .slide-down-toggle {
+  background: rgba(116, 185, 255, 0.2);
+}
+[data-genre="Country"] .slide-down-toggle {
+  background: rgba(211, 84, 0, 0.2);
+}
+[data-genre="RnB"] .slide-down-toggle {
+  background: rgba(142, 68, 173, 0.2);
+}
+[data-genre="Blues"] .slide-down-toggle {
+  background: rgba(74, 144, 226, 0.2);
+}
+[data-genre="Reggae"] .slide-down-toggle {
+  background: rgba(39, 174, 96, 0.2);
+}
+[data-genre="Funk"] .slide-down-toggle {
+  background: rgba(243, 156, 18, 0.2);
+}
+[data-genre="Gospel"] .slide-down-toggle {
+  background: rgba(155, 89, 182, 0.2);
+}
+[data-genre="Ska"] .slide-down-toggle {
+  background: rgba(128, 164, 192, 0.2);
+}
+[data-genre="Disco"] .slide-down-toggle {
+  background: rgba(232, 67, 147, 0.2);
+}
+[data-genre="Punk"] .slide-down-toggle {
+  background: rgba(192, 57, 43, 0.2);
+}
+[data-genre="Ambient"] .slide-down-toggle {
+  background: rgba(22, 160, 133, 0.2);
+}
+
+[data-genre="Rock"] .genre-label {
+  background: var(--rock-bg);
+  color: var(--rock-color);
+}
+[data-genre="Pop"] .genre-label {
+  background: var(--pop-bg);
+  color: var(--pop-color);
+}
+[data-genre="Jazz"] .genre-label {
+  background: var(--jazz-bg);
+  color: var(--jazz-color);
+}
+/* … rest der genre-label-Regeln unverändert … */
+
+.article-detail img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid;
+}
+
+.author-info {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body.light-mode .author-info {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.author-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid;
+}
+[data-genre="Rock"] .author-info img {
+  border-color: var(--rock-color);
+}
+[data-genre="Pop"] .author-info img {
+  border-color: var(--pop-color);
+}
+/* … rest der author-info img-Regeln unverändert … */
+
+/* LIKE SYSTEM */
+.interactions {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.like-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+.like-btn:hover {
+  transform: scale(1.05);
+}
+.like-btn.liked {
+  background: #e74c3c;
+}
+
+/* COMMENT SYSTEM */
+.comments-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+body.light-mode .comments-section {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.comment-form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.comment-form textarea {
+  min-height: 100px;
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #e6e6e6;
+  resize: vertical;
+}
+body.light-mode .comment-form textarea {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+.comment {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+body.light-mode .comment {
+  background: rgba(0, 0, 0, 0.05);
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.comment-author {
+  font-weight: bold;
+}
+.comment-date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.comment-btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #e3e0e0;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.comment-btn:hover {
+  background-color: #b3b3b3;
+}
+body.light-mode .comment-btn {
+  background-color: #5c5470;
+  color: #ffffff;
+}
+body.light-mode .comment-btn:hover {
+  background-color: #3a3546;
+}

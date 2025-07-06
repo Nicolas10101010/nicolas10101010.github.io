@@ -1,4 +1,3 @@
-/* Kontaktformular */
 .contact-form {
   background: rgba(20, 20, 30, 0.7);
   color: #e6e6e6;
@@ -30,7 +29,6 @@ body.light-mode .contact-form {
   border: none;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
-  color: #e6e6e6;
 }
 
 body.light-mode .contact-form input,

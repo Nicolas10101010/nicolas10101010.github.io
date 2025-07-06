@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musictasting – Kontakt</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-btn">
+        <h1>Musictasting</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="topics.html">Themen</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="bgToggle">Heller Hintergrund</button>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <h2>Sende uns eine Nachricht</h2>
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">E-Mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Bitte geben Sie eine gültige E-Mail-Adresse ein"
+          />
+          <label for="subject">Betreff:</label>
+          <select id="subject" name="subject" required>
+            <option>Allgemeine Anfrage</option>
+            <option>Feedback</option>
+            <option>Technische Fragen</option>
+            <option>Newsletter</option>
+            <option>Partnerschaft</option>
+          </select>
+
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Nachricht senden</button>
+        </form>
+      </section>
+
+      <section class="authors">
+        <h2>Unsere Autoren</h2>
+        <div class="author">
+          <a href="contact.html" class="author-link">
+            <img src="Blogs/Images/Nicolas.png" alt="Nicolas Manser" />
+            <h3>Nicolas Manser</h3>
+            <p>Musikexperte mit 10+ Jahren Erfahrung</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Musictasting</p>
+    </footer>
+    <script src="background.js"></script>
+  </body>
+</html>

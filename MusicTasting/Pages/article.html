@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Musictasting – Artikel</title>
+
+    <style>
+      .slide-down {
+        visibility: hidden;
+      }
+      html.js .slide-down {
+        visibility: visible;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Bebas+Neue&family=Orbitron:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&family=Metal+Mania&family=Roboto+Slab:wght@400;700&family=Comfortaa:wght@400;700&family=Amatic+SC:wght@400;700&family=Raleway:wght@400;700&family=Merriweather:wght@400;700&family=Fredericka+the+Great&family=Shrikhand&family=Great+Vibes&family=Anton&family=Monoton&family=Bangers&family=Exo+2:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Bebas+Neue&family=Orbitron:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&family=Metal+Mania&family=Roboto+Slab:wght@400;700&family=Comfortaa:wght@400;700&family=Amatic+SC:wght@400;700&family=Raleway:wght@400;700&family=Merriweather:wght@400;700&family=Fredericka+the+Great&family=Shrikhand&family=Great+Vibes&family=Anton&family=Monoton&family=Bangers&family=Exo+2:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Bebas+Neue&family=Orbitron:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&family=Metal+Mania&family=Roboto+Slab:wght@400;700&family=Comfortaa:wght@400;700&family=Amatic+SC:wght@400;700&family=Raleway:wght@400;700&family=Merriweather:wght@400;700&family=Fredericka+the+Great&family=Shrikhand&family=Great+Vibes&family=Anton&family=Monoton&family=Bangers&family=Exo+2:wght@400;700&display=swap"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-btn">
+        <h1>Musictasting</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="topics.html">Themen</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="bgToggle">Heller Hintergrund</button>
+    </header>
+
+    <main>
+      <article class="article-detail" data-genre="">
+        <h2 class="genre-title">Laden...</h2>
+        <p class="short-desc"></p>
+
+        <div class="intro-text"></div>
+
+        <div class="slide-down">
+          <button class="slide-down-toggle">
+            Kurze Geschichte des Genres <span class="toggle-icon">▼</span>
+          </button>
+          <div class="slide-down-content short-history"></div>
+        </div>
+
+        <div class="slide-down">
+          <button class="slide-down-toggle">
+            Ausführliche Geschichte <span class="toggle-icon">▼</span>
+          </button>
+          <div class="slide-down-content full-history"></div>
+        </div>
+
+        <img src="" alt="Artikelbild" />
+        <div class="author-info">
+          <img src="" alt="Autor Foto" />
+          <p class="author-name"></p>
+        </div>
+      </article>
+
+      <div class="interactions">
+        <button class="like-btn" id="likeBtn">
+          <span class="heart-icon">🤍</span>
+          <span class="like-text"> Like</span>
+        </button>
+      </div>
+
+      <section class="comments-section">
+        <h3>Kommentare (<span id="commentCount">0</span>)</h3>
+
+        <form class="comment-form" id="commentForm">
+          <textarea
+            placeholder="Schreibe einen Kommentar..."
+            required
+            id="commentText"
+          ></textarea>
+          <button type="submit" class="comment-btn">
+            Kommentar abschicken
+          </button>
+        </form>
+
+        <div id="commentsContainer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Musictasting</p>
+    </footer>
+
+    <script src="background.js"></script>
+    <script src="Blogs/article.js"></script>
+    <script src="likeSystem.js"></script>
+    <script src="commentSystem.js"></script>
+  </body>
+</html>

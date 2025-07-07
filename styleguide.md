@@ -2,7 +2,7 @@
 
 ## Farbpalette
 
-Definiert als CSS-Custom-Properties im `:root`-Selektor:
+Definiert als CSS-Custom-Properties im :root-Selektor:
 
 - **--rock-color:** `#e74c3c`
 - **--pop-color:** `#f39c12`
@@ -60,3 +60,28 @@ Definiert als CSS-Custom-Properties im `:root`-Selektor:
   }
   ```
   Zentriert den Inhalt und begrenzt die Breite auf 1200px.
+
+## Google Fonts
+
+**Benutzte Google Fonts:**
+
+- **Rock Salt:** Rock-Genre
+- **Montserrat:** Pop-Genre, Indie-Genre, RnB-Genre
+- **Playfair Display:** Jazz-Genre
+- **Bebas Neue:** Hip-Hop-Genre
+- **Orbitron:** Electronic-Genre
+- **Libre Baskerville:** Klassisch-Genre
+- **Poppins:** Indie-Genre, RnB-Genre
+- **Metal Mania:** Metal-Genre
+- **Roboto Slab:** Klassisch-Genre
+- **Comfortaa:** Lo-Fi-Genre
+- **Amatic SC:** Country-Genre
+- **Raleway:** RnB-Genre
+- **Merriweather:** Blues-Genre
+- **Fredericka the Great:** Reggae-Genre
+- **Shrikhand:** Funk-Genre
+- **Great Vibes:** Gospel-Genre
+- **Anton:** Ska-Genre
+- **Monoton:** Disco-Genre
+- **Bangers:** Punk-Genre
+- **Exo 2:** Ambient-Genre

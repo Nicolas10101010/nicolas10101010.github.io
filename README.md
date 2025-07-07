@@ -15,11 +15,11 @@
 
 ---
 
-### 1. Projektübersicht
+## **Projektübersicht**
 
 ---
 
-### 2. Planung & Vorbereitung
+## **Planung & Vorbereitung**
 
 _Diese Schritte gehen davon aus, den Projektauftrag schon gelesen und verstanden zu haben._
 
@@ -51,7 +51,7 @@ _Diese Schritte gehen davon aus, den Projektauftrag schon gelesen und verstanden
 
 ---
 
-### 3. Erstellung der Wireframes
+## **Erstellung der Wireframes**
 
 Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mithilfe von Screenshot eingebunden.
 
@@ -63,7 +63,7 @@ Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mi
 
 ---
 
-### 4. Integration von KI
+## **Integration von KI**
 
 #### Spezifischer Einsatz von KI
 
@@ -79,7 +79,7 @@ Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mi
 
 ---
 
-### 5. Zusätzliche Features
+## **Zusätzliche Features**
 
 1. **Like-System** (Web Storage API)
 2. **Kommentarfunktion** (LocalStorage)
@@ -90,13 +90,13 @@ Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mi
 
 ---
 
-### 6. Reflexion & Verbesserungspotential
+## **Reflexion & Verbesserungspotential**
 
 Es war ein sehr cooles Projekt, das viel Raum für Kreativität liess. Das Ziel war nicht, die komplexeste Website zu erstellen, sondern eine, die mir persönlich gefällt. Auch wenn ich im Nachhinein erkannt habe, dass ich viel mit KI gearbeitet habe (hauptsächlich aufgrund von Zeitdruck), denke ich, dass ich viel aus diesem Projekt gelernt habe. Die wichtigste Erkenntnis war, wie wichtig es ist, mit den Entwicklertools zu arbeiten, um Anpassungen schnell zu testen, ohne den eigenen Code zu verändern.
 
 ---
 
-### 7. Design & Styleguide
+## **Design & Styleguide**
 
 <bild>
 

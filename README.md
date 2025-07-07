@@ -63,9 +63,15 @@ Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mi
 
 #### Mobile Version
 
+![Wireframe-Mobile](Wireframes%20&%20Styleguide/wireframe-mobile.png)
+
 #### Tablet Version
 
+![Wireframe-Tablet](Wireframes%20&%20Styleguide/wireframe-tablet.png)
+
 #### Desktop Version
+
+![Wireframe-Desktop](Wireframes%20&%20Styleguide/wireframe-desktop.png)
 
 ---
 

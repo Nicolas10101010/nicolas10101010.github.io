@@ -2,181 +2,104 @@
 
 ## Inhaltsverzeichnis
 
-1. [Einführung & Motivation](#einführung--motivation)
-2. [Gedankengang & Planungsphase](#gedankengang--planungsphase)
-3. [Wireframes](#wireframes)
-   - Mobile
-   - Tablet
-   - Desktop
-4. [Implementierung im Detail](#implementierung-im-detail)
-   - Seitenstruktur
-   - Grid-Layout & Responsive Design
-   - Dynamische Inhalte mit JavaScript
-   - Formulare & Interaktivität
-   - Dark Mode & Extras
-5. [KI-Einsatz und Workflow](#ki-einsatz-und-workflow)
-6. [Erweiterte Features](#erweiterte-features)
-7. [Reflexion & Verbesserungsmöglichkeiten](#reflexion--verbesserungsmöglichkeiten)
-8. [Bekannte Bugs & ToDos](#bekannte-bugs--todos)
-9. [Styleguide](#styleguide)
+1. [Projektübersicht](#projektübersicht)
+2. [Planung & Vorbereitung](#planung--vorbereitung)
+3. [Erstellung der Wireframes](#erstellung-der-wireframes)
+   - [Mobile Version](#mobile-version)
+   - [Tablet Version](#tablet-version)
+   - [Desktop Version](#desktop-version)
+4. [Integration von KI](#integration-von-ki)
+5. [Zusätzliche Features](#zusätzliche-features)
+6. [Reflexion & Verbesserungspotential](#reflexion--verbesserungspotential)
+7. [Design & Styleguide](#design--styleguide)
 
 ---
 
-## Einführung & Motivation
-
-Als leidenschaftlicher Musikfan wollte ich eine Plattform schaffen, die Nutzer\:innen spielerisch durch die Vielfalt der Musikgenres führt. **Musictasting** entstand aus dem Bedürfnis heraus, unterschiedliche Stile auf einen Blick vergleichen zu können und gleichzeitig einen modernen Webauftritt zu gestalten, der durch KI-gestützte Tools optimiert wird.
-
-- **Warum „Musictasting“?**
-  - Analog zum Wein-Tasting: kleine Kostproben verschiedener Genres ermöglichen den schnellen Überblick.
-  - Fokus auf Schnelligkeit, Übersichtlichkeit und ästhetisches Design.
-  - Kombination aus technischer UX/UI-Optimierung und inhaltlicher Tiefe.
+### 1. Projektübersicht
 
 ---
 
-## Gedankengang & Planungsphase
+### 2. Planung & Vorbereitung
 
-1. **Zielgruppenanalyse**
-   - Hauptziel: Musikinteressierte zwischen 16 und 50 Jahren.
-   - Sekundär: Studierende und Berufstätige, die nebenbei neue Musik entdecken möchten.
-2. **Feature-Definition**
-   - Startseite: Neueste & beliebteste Artikel, Newsletter-Anmeldung.
-   - Themenübersicht: Filterbare Genre-Übersicht.
-   - Detailseiten: Artikeltexte, Bilder, Videos, Autor\:innenprofil.
-   - Kontaktseite: Kontaktformular mit Betreff-Dropdown.
-3. **Technik-Stack**
-   - **HTML & CSS**: Alles selbst geschrieben, keine Frameworks.
-   - **JavaScript**: Dynamische Inhaltsbefüllung (`article.js`, `topics.js`), Web Storage API.
-   - **KI-Tools**: Cursor und Windsurf für Boilerplate-Generierung und UI-Vorschläge.
-4. **Workflow**
-   - Git-Repository strukturiert: `/html`, `/css`, `/js`, `/wireframes`, `/assets`.
-   - Branching für Features: `feature-wireframes`, `feature-ki-docs`, `feature-darkmode`, etc.
+_Diese Schritte gehen davon aus, den Projektauftrag schon gelesen und verstanden zu haben._
 
----
+1. **Wireframes erstellen**
 
-## Wireframes
+   - Leider habe ich erst später bemerkt, wie hilfreich dieser Schritt sein kann, besonders bei Tablets und Handys.
 
-Die Wireframes wurden zunächst in **draw\.io** skizziert und dann in Markdown eingebunden. Sie veranschaulichen jeweils Layout, Navigation und Content-Blöcke.
+2. **Ordnerstruktur erstellen**
 
-### Mobile
+   - Zunächst wollte ich meine Ordnerstruktur nach dem Atomic Design-Prinzip organisieren, aber ich stellte fest, dass dies zu aufwendig gewesen wäre und letztlich nicht notwendig war. Bei GitHub Pages muss `index.html` im Root-Verzeichnis liegen.
 
-- **Header**: Burger-Menü, Logo, Newsletter-Icon.
-- **Artikel-Grid**: Einspaltiges Scroll-Layout.
-- **Footer**: Social-Media-Links minimiert.
+3. **Dateien erstellen**
 
-### Tablet
+   - Basierend auf dem Projekt wusste ich, dass mindestens 4 HTML-Dateien benötigt werden (Startseite, Themen, Artikel und Kontakt). Daher mussten auch 4 CSS-Dateien erstellt werden, um die spezifischen UI-Komponenten jeder Seite zu stylen. Zusätzlich war eine allgemeine CSS-Datei wichtig, um Redundanzen zu vermeiden.
 
-- **Header**: Hamburger-Icon entfällt, horizontale Nav.
-- **Grid**: Zwei Spalten für Artikel-Vorschauen.
-- **Kontaktformular**: Vollbreite mit Dropdown.
+4. **Grundstruktur der HTML-Dateien**
 
-### Desktop
+   - Die Verknüpfung zwischen den Dateien wurde mit einem Header und einigen grundlegenden Texten hergestellt.
 
-- **Header**: Vollständige Navigation mit Logo zentriert.
-- **Grid**: Drei Spalten für Artikel.
-- **Seitenleiste**: Thema/Favoriten-Widget.
+5. **Erneutes Überprüfen des Projektauftrags**
+
+   - Durch meine Erfahrungen mit anderen Projekten habe ich gelernt, wie wichtig es ist, regelmässig den Projektauftrag zu überprüfen. 8 von 10 Mal habe ich etwas vergessen und vor der Präsentation den "Oh Shit"-Moment erlebt. Diesmal habe ich mehrfach die Kriterienliste und den Projektauftrag durchgesehen, um sicherzugehen, dass ich nichts übersehe.
+
+6. **Implementierung des Designs**
+
+   - Hier kam der schwierige Teil: Design. Ich entschied mich, zunächst ein Grundgerüst mit KI zu erstellen und dann viele Anpassungen mit den Entwicklertools im Browser vorzunehmen. Wichtig dabei war, immer genügend Kontext zu geben, da die KI ansonsten Änderungen vornehmen könnte, die das Projekt zurückwerfen.
+
+**Wichtig:** Dieses Repository wurde vorübergehend erstellt, um meine Website auf GitHub Pages hochladen zu können. Regelmässige Commits habe ich in meinem M293-Repository gemacht.
 
 ---
 
-## Implementierung im Detail
+### 3. Erstellung der Wireframes
 
-### 1. Seitenstruktur
+Die Wireframes wurden zunächst in **draw.io** skizziert und dann in Markdown mithilfe von Screenshot eingebunden.
 
-- Dateien: `index.html`, `topics.html`, `article.html`, `contact.html`
-- Alle Seiten verwenden semantische Elemente: `<header>`, `<main>`, `<footer>`.
-- Gemeinsame Navigation per `nav.html` als Include (Server-seitiges Build).
+#### Mobile Version
 
-### 2. Grid-Layout & Responsive Design
+#### Tablet Version
 
-- **CSS-Grid** in `.articles-grid`:
-  ```css
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-  }
-  ```
-- **Media Queries**:
-  ```css
-  @media (max-width: 600px) {
-    .articles-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media (min-width: 601px) and (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  ```
-
-### 3. Dynamische Inhalte mit JavaScript
-
-- ``: Objekt mit allen Genres als Keys (inkl. Hip-Hop, Country, Blues, Latin, RnB, Lo-Fi).
-- **Param-Auswertung**:
-  ```js
-  const params = new URLSearchParams(window.location.search);
-  const genre = params.get("genre") || "Rock";
-  const data = contentMap[genre];
-  ```
-- **Inhaltsbefüllung**: Text, Bilder (`<img>`), Videos (`<video controls>`), Autor\:innen-Bereich.
-
-### 4. Formulare & Interaktivität
-
-- **Newsletter**: Einfaches Formular mit Mailchimp-Integration (Action-URL).
-- **Kontakt**: `<select>` für Betreff, `fetch()`-POST zu `contact.php`.
-- **Like-System**: LocalStorage, jeder Artikel-Key speichert Anzahl und User-Flag.
-- **Kommentare**: Minimaler JSON-Store in `localStorage`, Kommentar-Widget unter `<article>`.
-
-### 5. Dark Mode & Extras
-
-- **Dark Mode** per CSS-Variante und Toggle-Button:
-  ```js
-  document.body.classList.toggle("dark-mode");
-  ```
-- **Optional**: Sticky-Sidebar mit Top-Genres.
+#### Desktop Version
 
 ---
 
-## KI-Einsatz und Workflow
+### 4. Integration von KI
 
-| Tool     | Einsatzgebiet                | Prompt-Beispiel                                 | Ergebnis                           |
-| -------- | ---------------------------- | ----------------------------------------------- | ---------------------------------- |
-| Cursor   | HTML-Boilerplate             | "Erzeuge ein responsive Grid-Layout-HTML"       | Grundstruktur in `index.html`      |
-| Windsurf | CSS-Variablen für Styleguide | "Erzeuge Farbpaletten-Variablen für Styleguide" | `:root`-Definition in `styles.css` |
-| ChatGPT  | Content-Redaktion, Texte     | "Schreibe kurze Einführung zu Jazz-Genre"       | Inhalte für `contentMap.Jazz`      |
+#### Spezifischer Einsatz von KI
 
-- **Prozess**: Zuerst Prompt formuliert → KI-Antwort geprüft → manuelle Anpassung → Integration.
-- **Dokumentation**: Alle Prompts und Outputs in `ki-documentation.md` per Markdown geloggt.
+| Tool     | Einsatzgebiet                | Prompt-Beispiel                                 |
+| -------- | ---------------------------- | ----------------------------------------------- |
+| Windsurf | CSS-Variablen für Styleguide | "Erkläre mir diesen Teil vom Code"              |
+| ChatGPT  | Content-Redaktion, Texte     | "Schreibe eine kurze Einführung zum Jazz-Genre" |
+| Deepseek | Korrektur von Code/Bugfixing | "Wie kann ich dieses Problem lösen?"            |
+
+- **Prozess**: Zuerst die Frage formulieren und Kontext geben → KI-Antwort erhalten → manuelle Anpassung → Integration.
+
+#### Genereller Einsatz von KI
 
 ---
 
-## Erweiterte Features
+### 5. Zusätzliche Features
 
 1. **Like-System** (Web Storage API)
 2. **Kommentarfunktion** (LocalStorage)
-3. **Dark Mode**
-4. **Sticky Genre-Sidebar**
-5. **Lazy Loading (planned)**
+3. **Light Mode**
+4. **Lazy Loading** (wegen Bugfixing)
+5. **Slider-Implementationen**
+6. **Spezifische Fonts und Farben für Genres**
 
 ---
 
-## Reflexion & Verbesserungsmöglichkeiten
+### 6. Reflexion & Verbesserungspotential
 
-- **Performance**: Lazy Loading für Bilder & Videos fehlt, könnte LCP verbessern.
-- **Accessibility**: ARIA-Labels und Tastaturnavigation optimieren.
-- **Testing**: Automatisierte Tests (Lighthouse, aXe) integrieren.
-- **Internationalisierung**: Mehrsprachigkeit (i18n) vorbereiten.
+Es war ein sehr cooles Projekt, das viel Raum für Kreativität liess. Das Ziel war nicht, die komplexeste Website zu erstellen, sondern eine, die mir persönlich gefällt. Auch wenn ich im Nachhinein erkannt habe, dass ich viel mit KI gearbeitet habe (hauptsächlich aufgrund von Zeitdruck), denke ich, dass ich viel aus diesem Projekt gelernt habe. Die wichtigste Erkenntnis war, wie wichtig es ist, mit den Entwicklertools zu arbeiten, um Anpassungen schnell zu testen, ohne den eigenen Code zu verändern.
 
 ---
 
-## Bekannte Bugs & ToDos
-
-| Bug                                    | Status   | ToDo                                     |
-| -------------------------------------- | -------- | ---------------------------------------- |
-| Leere Detailseiten für fehlende Genres | offen    | `contentMap` um alle 20 Genres erweitern |
-| Dropdown resetet nach Submit           | behoben? | JS-Reset-Funktion prüfen                 |
-| Responsive-Bruch bei <320px            | offen    | Media Query anpassen                     |
-
----
-
-## Styleguide
+### 7. Design & Styleguide
 
 <bild>
+
+---
+
+Dieser Text wurde von mir geschieben und danach mit ChatGPT korrigiert und besser formatiert.

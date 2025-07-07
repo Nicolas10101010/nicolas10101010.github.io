@@ -385,7 +385,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", () => {
       if (!container.classList.contains("active")) {
-        // Aufklappen
         panel.style.display = "block";
         panel.style.height = "0";
         panel.style.opacity = "0";
